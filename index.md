@@ -7,7 +7,6 @@
 #
 layout: home
 ---
-Build Applications from Website to Mobile - Mobile Version of A Sample Server-Rendered Website with Node.js
 
 This is the mobile version of the [Build Applications from Website to Mobile - A Sample Server-Rendered Website with Node.js](https://nextjs-projects-wheat.vercel.app/), which illustrates **John Chen's** side projects for publicity to show up his technical capabilities and interests.
 
