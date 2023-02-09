@@ -65,14 +65,13 @@ function IntroFull(){
    );
 }
 
-/*
 function ListItem({children}: {children: React.ReactNode}){
    return (
-      <View style={{paddingRight: 15}}>
+      <View style={{paddingRight: 12}}>
          <Text style={styles.itemText}>{children}</Text>
       </View>   
    );
-}*/
+}
 
 interface PropsType {
   navigation: any
@@ -89,7 +88,7 @@ export default function HomeScreen({ navigation }: PropsType) {
     
    let introBriefing = (
       <View>
-         <View style={[styles.paragraphView, {height: 224}]}>
+         <View style={[styles.paragraphView, {height: 168}]}>
             {briefStart()}
             <Text style={styles.linkText} onPress={() => setIntroExp(true)}>More...</Text>
          </View>
@@ -109,6 +108,27 @@ export default function HomeScreen({ navigation }: PropsType) {
                  <PrimeHead />
                </View>  
                {introBriefing}
+               <View style={[styles.paragraphView,{paddingTop: 10}]}>
+                  <Text style={styles.titleText}>Skills</Text>
+               </View>
+               <View style={styles.horizontalListView}>
+                  <ListItem>CSS</ListItem>
+                  <ListItem>HTML5</ListItem>
+                  <ListItem>JavaScript</ListItem>
+                  <ListItem>TypeScript</ListItem>
+                  <ListItem>Node.js</ListItem>
+                  <ListItem>React.js</ListItem>
+                  <ListItem>Next.js</ListItem>
+                  <ListItem>Express.js</ListItem>
+                  <ListItem>React Native</ListItem>
+                  <ListItem>SQL</ListItem>
+                  <ListItem>MySQL</ListItem>
+                  <ListItem>Firebase</ListItem>
+                  <ListItem>Docker</ListItem>
+                  <ListItem>REST API</ListItem>
+                  <ListItem>GraphQL</ListItem>
+                  <ListItem>PHP</ListItem>
+               </View>
                <View style={[styles.paragraphView,{paddingTop: 10}]}>
                   <Text style={styles.titleText}>Projects</Text>
                </View>

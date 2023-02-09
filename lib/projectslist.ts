@@ -96,6 +96,17 @@ export const projectsList: DataItem[] = [
     priority: 140
     },
     {
+    id: 'firebase-realtime-chat',
+    contentHtml: '<p>We can successfully build a real-time chat application with <a href="https://nextjs.org/">Next.js</a> using <a href="https://socket.io/">Socket.IO</a>. The real-time communication however was found not to function well once the package is deployed to Vercel, which is a serverless platform. It is suggested by Vercel two main approaches to applying a real-time model to stateless serverless functions.</p><ol><li>Serverless Functions have maximum execution limits and should respond as quickly as possible. They should not subscribe to data events. Instead, we need a client that subscribes to data events (such as <a href="https://ably.com/">Alby</a>, <a href="https://pusher.com/">Pusher</a>, etc.) and a serverless function that publishes new data.</li><li>Rather than pushing data, we can fetch real-time data on-demand. For example, the Vercel dashboard delivers realtime updates using <a href="https://swr.vercel.app/">SWR</a>.</li></ol><p>In this demonstration, we build a real-time chat application with <a href="https://firebase.google.com/products/cloud-messaging">Firebase Cloud Messaging</a>. The Firebase Cloud Messaging(FCM) JavaScript API lets you receive notification messages in web apps running in browsers that support the <a href="https://www.w3.org/TR/push-api/">Push API</a>. This includes the browser versions listed in this <a href="https://caniuse.com/push-api">support matrix</a> and Chrome extensions via the Push API.</p>',
+    title: 'Chat Applications with Firebase Cloud Messaging',
+    description: 'A real-time chat application with Next.js using Firebase Cloud Messaging',
+    siteurl: 'https://firebase-realtime-chat.vercel.app',
+    source: 'https://github.com/jglchen/firebase-realtime-chat',
+    docker: 'docker run -p 3000:3000 jglchen/firebase-realtime-chat',
+    siteimg: 'pc-firebase-realtime-chat.png',
+    priority: 135
+    },
+    {
     id: 'nextjs-socket-chat',
     contentHtml: '<p>There are many ways to achieve real-time content updates on the web. Long-polling, web sockets and server-side events are popular ways for real-time updates. With long-polling an HTTP request is made to the server at a predefined interval. In server-side events, the browser’s event source API is used to open a channel of communication between the client and the server for updates to flow from the server to the client. The web socket protocol opens a two-way communication channel between the client and the server to allow updates to move in both ways.</p><p>This real-time chat application is built with <strong><a href="https://nextjs.org/">Next.js</a></strong> using <strong><a href="https://socket.io/">Socket.IO</a></strong> for demonstrations.</p>',
     title: 'Chat Applications with Socket.IO',

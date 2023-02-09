@@ -20,6 +20,8 @@ export function getImageSource(imgsource: string){
             return require('../assets/images/pc-firebase-auth-email.png');
         case 'm-firebase-auth-email.png':
             return require('../assets/images/m-firebase-auth-email.png');
+        case 'pc-firebase-realtime-chat.png':
+            return require('../assets/images/pc-firebase-realtime-chat.png');
         case 'pc-firestore-realtime-chat.png':
             return require('../assets/images/pc-firestore-realtime-chat.png');
         case 'm-firestore-realtime-chat.png':
