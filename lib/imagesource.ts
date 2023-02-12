@@ -1,5 +1,9 @@
 export function getImageSource(imgsource: string){
     switch (imgsource) { 
+        case 'pc-meal-delivery.png':
+            return require('../assets/images/pc-meal-delivery.png');
+        case 'm-meal-delivery.png':
+            return require('../assets/images/m-meal-delivery.png');
         case 'pc-scheduler-app.png':
             return require('../assets/images/pc-scheduler-app.png');
         case 'm-scheduler-app.png':

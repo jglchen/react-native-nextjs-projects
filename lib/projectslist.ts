@@ -1,6 +1,21 @@
 import { DataItem } from "./types";
 
 export const projectsList: DataItem[] = [
+    
+    {
+    id: 'meal-delivery',
+    contentHtml: '<p>This is a semi-commercial meal-delivery app for demonstrations. Everybody can sign up as a regular consumer in this app. If regular consumers want to list their restaurants in the app for delivery, any user can express their intent in the app. The app administrator has the authority to approve the application. If the application is approved, the applicant will become a restaurant owner. Restaurant owners can play dual roles as restaurant owners and as regular consumers. Restaurant owners can place orders as regular users to any restaurant except for the one they manage.</p><p>The key functionalities of this app are summarized as bolow:</p><ol><li>Everybody can sign up as a regular consumer in this app.</li><li>Registered consumers can apply as restaurant owners to list their restaurants in the app for delivery. The applications need approval by the app administrator.</li><li>Restaurant owners can play dual roles as restaurant owners and as regular consumers. Restaurant owners can place orders as regular users to any restaurant except for the one they manage.</li><li>Restaurant owners have the authority to list their restaurants in the app, which still need the app administrator’s approval to be officially on board.</li><li>Restaurant owners have the authority to add any meals to the restaurants they manage.</li><li>Restaurant owners can block users. The blocked users will not be able to follow the restaurants and place orders.</li><li>An order should be placed for a single restaurant only.</li><li>Once a delivery order is placed, both the placing user and the restaurant owner can instantaneously follow the delivery status. The placing users can cancel the orders if the restaurant owner does not start processing.</li><li>Regular users can track down all their purchase order records.</li><li>Restaurant owners can examine all the clients, which have placed orders at their restaurants, and their purchase order records.</li></ol><p><strong>iOS</strong> and <strong>Android</strong> mobile apps are also delivered. The apps are developed with <strong>React Native</strong>, anyone who is interested can test the apps through the <a href="https://expo.dev/@jglchen/meal-delivery">Expo Publish Link</a> with <a href="https://expo.dev/client">Expo Go</a> app.</p>',
+    title: 'Meal Delivery App',
+    description: 'A semi-commercial meal-delivery app for demonstrations.',
+    appurl: 'https://meal-delivery-three.vercel.app',
+    source: 'https://github.com/jglchen/meal-delivery',
+    nativepub: 'https://exp.host/@jglchen/meal-delivery',
+    nativesource: 'https://github.com/jglchen/react-native-meal-delivery',
+    docker: 'docker run -p 3000:3000 jglchen/meal-delivery',
+    siteimg: 'pc-meal-delivery.png',
+    mobileimg: 'm-meal-delivery.png',
+    priority: 220
+    },    
     {
     id: 'scheduler-app',
     contentHtml: '<p>This is an appointment scheduler app for demonstrations. Once you sign up for this app, you can set up scheduled activities in the app for you. You can list the meeting targets with their email addresses and ask the app to send confirmation emails for a meeting appointment.</p><p>Users can quickly check their scheduled activities while browsing calendars, and then select a single date or date ranges to list out all the scheduled activities in the selected period.</p><p><strong>iOS</strong> and <strong>Android</strong> mobile apps are also delivered. The apps are developed with <strong>React Native</strong>, anyone who is interested can test the apps through the <a href="https://expo.dev/@jglchen/scheduler-app">Expo Publish Link</a> with <a href="https://expo.dev/client">Expo Go</a> app.</p>',
