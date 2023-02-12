@@ -127,6 +127,7 @@ export default function HomeScreen({ navigation }: PropsType) {
                   <ListItem>Docker</ListItem>
                   <ListItem>REST API</ListItem>
                   <ListItem>GraphQL</ListItem>
+                  <ListItem>jQuery</ListItem>
                   <ListItem>PHP</ListItem>
                </View>
                <View style={[styles.paragraphView,{paddingTop: 10}]}>
